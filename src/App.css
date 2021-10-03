@@ -33,3 +33,30 @@
   color: #fff;
   font-size: 100px;
 }
+
+.social-container {
+  color: #fff;
+  background: rgba(12, 10, 150, 0.007);
+  padding: 25px 200px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+
+a.facebook {
+  color: #1950c9;
+  margin-top: 50px;
+
+}
+
+
+
+a.instagram {
+  color: rgb(252, 248, 248);
+}

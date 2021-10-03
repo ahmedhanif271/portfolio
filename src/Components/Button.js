@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({
+export const Button1 = ({
   children,
   type,
   onClick,
@@ -20,7 +20,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link to='/about' className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -28,6 +28,63 @@ export const Button = ({
       >
         {children}
       </button>
-    </Link>
+      
+      </Link>
+      
+  );
+};
+export const Button2 = ({
+  children,
+  type,
+  onClick,
+  buttonStyle,
+  buttonSize
+}) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle)
+    ? buttonStyle
+    : STYLES[0];
+
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+
+  return (
+    <Link to='/contact' className='btn-mobile'>
+      <button
+        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        onClick={onClick}
+        type={type}
+      >
+        {children}
+      </button>
+      
+      </Link>
+      
+  );
+};
+
+export const Button3 = ({
+  children,
+  type,
+  onClick,
+  buttonStyle,
+  buttonSize
+}) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle)
+    ? buttonStyle
+    : STYLES[0];
+
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+
+  return (
+    <Link to='/signup' className='btn-mobile'>
+      <button
+        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        onClick={onClick}
+        type={type}
+      >
+        {children}
+      </button>
+      
+      </Link>
+      
   );
 };

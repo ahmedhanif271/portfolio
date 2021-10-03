@@ -1,13 +1,14 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+import { Button1, Button2} from './Button';
 import './HeroSection.css';
-
+import { Link } from 'react-router-dom';
+import SocialFollow from './SocialFollow';
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <img className='onee' src='/images/pfb2.jpg'  />
       <h1 class='one'>
         Hello, I'm AHMED
         </h1>
@@ -18,23 +19,43 @@ function HeroSection() {
 
       <p>Product and Website designer </p>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+        <Button1
+        className='btns' 
+        buttonStyle='btn--outline'
+        buttonSize='btn--large'
+        onClick="onCLick"
         >
-          About
-        </Button>
-        <Button
+       
+        
+         
+        
+        
+          
+        About
+          
+        
+      
+      
+       </Button1>
+
+        
+        
+        
+        
+        
+        <Button2
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
           Contact <i className='far fa-phone' aria-hidden="true"></i> 
-        </Button>
+        </Button2>
       </div>
-    </div>
+      
+  
+</div>
+    
   );
 }
 

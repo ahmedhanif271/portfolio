@@ -2,13 +2,28 @@ import React from 'react';
 import { Button1, Button2 } from '../Button';
 import '../../App.css';
 import '../Projects.css';
+import ReactRoundedImage from "react-rounded-image";
+import MyPhoto from "../../images/pfb3.1.jpg";
+
+import '../Constants/Routes';
 
 
 
-function Projects() {
+function About() {
   return (
-    <div className='projects-container'>
-      <video src='/videos/video-2.mp4' autoPlay loop muted />
+    <div className='about-container'>
+      
+      
+      <ReactRoundedImage
+          image={MyPhoto}
+          roundedColor="azure"
+          imageWidth="150"
+          imageHeight="150"
+          roundedSize="8"
+          
+          hoverColor="purple"
+        />
+      <img className='two' src='/images/pfb1.jpg' />
       <h1 class='one'>
         These are the list of the Projects 
         </h1>
@@ -25,7 +40,7 @@ function Projects() {
         </h2>
 
       <p>Product and Website designer </p>
-      <div className='projects-btns'>
+      <div className='about-btns'>
         <Button1
           className='btns' 
           buttonStyle='btn--outline'
@@ -47,4 +62,4 @@ function Projects() {
 }
 
 
-export default Projects;
+export default About;
